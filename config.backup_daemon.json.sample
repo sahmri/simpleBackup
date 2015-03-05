@@ -1,0 +1,33 @@
+{
+	"credentials"	: {
+		"credential1"	: {
+			"user"	: "username"
+		}
+	},
+	"servers"		: {
+		"server1"	: {
+			"address"		: "address.server1.com"
+		}
+	},
+	"backups"	: {
+		"iMacHomeFolder"	: {
+			"name"				: "Office iMac Home Folder",
+			"description"		: "Backup the entire home folder of my iMac to our storage space at eRSA",
+			"source"			: {
+				"type"		: "local",
+				"folder"	: "/Users/my_user_name"
+			},
+			"destination"		: {
+				"type"			: "remote",
+				"server"		: "server1",
+				"credentials"	: "credential1",
+				"folder"		: "/remote/folder/for/backups",
+				"signalFiles"	: ["/sample/signaling/file/created/empty"]
+			}
+		}
+	},
+	"logger"	: {
+		"folder"	: "./",
+		"level"		: "debug"
+	}
+}
