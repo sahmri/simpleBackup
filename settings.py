@@ -19,7 +19,7 @@ _config = None
 def prepareConfig():
 	global _config
 	#print("Preparing config")
-	configFile = "./config.main_daemon.json"
+	configFile = "./config.backup_daemon.json"
 	# Parse command line options
 	# Create the command line parser with its options
 	cmdl_version = '2015.03.05'
