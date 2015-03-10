@@ -53,6 +53,7 @@ def launchBackupForItem(bitem, key):
 				+ "--stats " \
 				+ "--exclude=.Spotlight-V100 " \
 				+ "--exclude=.Trashes " \
+				+ "--exclude=.Trash " \
 				+ "--exclude=.fseventsd " \
 				+ "--exclude=._.Trashes " \
 				+ "--exclude=.DS_Store " \
