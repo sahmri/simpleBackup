@@ -48,7 +48,7 @@ def launchBackupForItem(bitem, key):
 	miLogger.info("Running backup for '" + bitem['name'] + "'")
 	sourceEndPoint = getEndPoint(bitem['source'])
 	destinationEndPoint = getEndPoint(bitem['destination'])
-	command = "rsync -vahzx --compress-level=9 --no-devices --no-p " \
+	command = "rsync -vahx --no-devices --no-p " \
 				+ "--progress " \
 				+ "--stats " \
 				+ "--exclude=.Spotlight-V100 " \
