@@ -94,7 +94,6 @@ def waitForBackupsToComplete(ongoingBackups):
             if ongoingBackups[bitem]['process'] is None:
                 ongoingBackups.pop(bitem, None)
                 continue
-            else:
             result = ongoingBackups[bitem]['process'].wait()
             if result:
                 if ongoingBackups[bitem]['tryCounter'] == ntries:
