@@ -22,3 +22,6 @@ install_requirements:
 	@$(python_folder)/bin/pip install -r requirements.txt
 
 # Folders
+tmp:
+	@echo "<===|DEVOPS|===> [FOLDER] Creating temporary folders"
+	@mkdir -p tmp
