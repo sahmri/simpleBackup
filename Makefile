@@ -24,7 +24,7 @@ install_requirements:
 # Folders
 tmp:
 	@echo "<===|DEVOPS|===> [FOLDER] Creating temporary folders"
-	@mkdir -p tmp
+	@mkdir -p tmp/primesdbweb
 
 bin:
 	@echo "<===|DEVOPS|===> [FOLDER] Creating bin folder"
