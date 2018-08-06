@@ -48,6 +48,9 @@ def getSignalCommands(item):
 def launchBackupForItem(bitem, key):
     config = settings.getConfig()
     miLogger = logger.getLogger()
+    if 'disabled' in bitem:
+        miLogger.warning("Skip DISABLED backup entry " + str(bitem))
+        return None
     miLogger.info("Running backup for '" + bitem['name'] + "'")
     sourceEndPoint = getEndPoint(bitem['source'])
     destinationEndPoint = getEndPoint(bitem['destination'])
@@ -88,6 +91,8 @@ def waitForBackupsToComplete(ongoingBackups):
     ntries = 12
     while len(ongoingBackups) > 0:
         for bitem in list(ongoingBackups):
+            if ongoingBackups[bitem]['process'] is None:
+                continue
             result = ongoingBackups[bitem]['process'].wait()
             if result:
                 if ongoingBackups[bitem]['tryCounter'] == ntries:
