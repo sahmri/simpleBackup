@@ -51,3 +51,7 @@ clean_dev:
 clean_tmp:
 	@echo "<===|DEVOPS|===> [HOUSEKEEPING] Cleaning temporary folders"
 	@rm -rf tmp
+
+clean_bin:
+	@echo "<===|DEVOPS|===> [HOUSEKEEPING] Cleaning external binaries"
+	@rm -rf bin/*
