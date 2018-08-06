@@ -34,3 +34,8 @@ logs:
 	@echo "<===|DEVOPS|===> [FOLDER] Creating 'logs' folder"
 	@mkdir logs
 # END - Folders
+
+update_requirements_file:
+	@echo "<===|DEVOPS|===> [REQUIREMENTS] Updating requirements file"
+	@#python_install/bin/pipreqs --use-local --savepath requirements.txt $(PWD)
+	@$(python_folder)/bin/pip freeze > requirements.txt
