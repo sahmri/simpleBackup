@@ -20,3 +20,5 @@ install_requirements:
 	@echo "<===|DEVOPS|===> [INSTALL] Installing platform requirements"
 	@#python_install/bin/pip install pipreqs nose
 	@$(python_folder)/bin/pip install -r requirements.txt
+
+# Folders
