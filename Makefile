@@ -42,3 +42,8 @@ update_requirements_file:
 
 tests:
 	@echo "<===|DEVOPS|===> [TESTS] Running unit tests"
+
+# Housekeeping
+clean_dev:
+	@echo "<===|DEVOPS|===> [HOUSEKEEPING] Cleaning development environment"
+	@rm -rf $(python_folder)
