@@ -55,3 +55,6 @@ clean_tmp:
 clean_bin:
 	@echo "<===|DEVOPS|===> [HOUSEKEEPING] Cleaning external binaries"
 	@rm -rf bin/*
+
+clean: clean_tmp
+	@echo "<===|DEVOPS|===> [HOUSEKEEPING] Cleaning"
