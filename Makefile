@@ -62,3 +62,5 @@ clean: clean_tmp
 clean_all: clean clean_dev
 	@echo "<===|DEVOPS|===> [HOUSEKEEPING] Cleaning all environments"
 # END - Housekeeping
+
+.PHONY: install python_install install_requirements update_requirements_file tests clean_dev clean_all clean_tmp clean_bin clean
