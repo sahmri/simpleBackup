@@ -29,3 +29,8 @@ tmp:
 bin:
 	@echo "<===|DEVOPS|===> [FOLDER] Creating bin folder"
 	@mkdir bin
+
+logs:
+	@echo "<===|DEVOPS|===> [FOLDER] Creating 'logs' folder"
+	@mkdir logs
+# END - Folders
