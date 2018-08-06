@@ -25,3 +25,7 @@ install_requirements:
 tmp:
 	@echo "<===|DEVOPS|===> [FOLDER] Creating temporary folders"
 	@mkdir -p tmp
+
+bin:
+	@echo "<===|DEVOPS|===> [FOLDER] Creating bin folder"
+	@mkdir bin
