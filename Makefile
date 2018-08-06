@@ -58,3 +58,7 @@ clean_bin:
 
 clean: clean_tmp
 	@echo "<===|DEVOPS|===> [HOUSEKEEPING] Cleaning"
+
+clean_all: clean clean_dev
+	@echo "<===|DEVOPS|===> [HOUSEKEEPING] Cleaning all environments"
+# END - Housekeeping
