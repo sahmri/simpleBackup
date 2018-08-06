@@ -49,7 +49,7 @@ def launchBackupForItem(bitem, key):
     config = settings.getConfig()
     miLogger = logger.getLogger()
     if 'disabled' in bitem:
-        miLogger.warning("Skip DISABLED backup entry " + str(bitem))
+        miLogger.warning("Skip DISABLED backup entry " + str(key))
         return None
     miLogger.info("Running backup for '" + bitem['name'] + "'")
     sourceEndPoint = getEndPoint(bitem['source'])
